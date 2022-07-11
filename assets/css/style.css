@@ -1,0 +1,17 @@
+.main {
+    margin-inline: auto;
+}
+
+.cus-card {
+    width: 18rem;
+    margin: auto;
+}
+
+.cus-card-img {
+    width: 75px;
+    margin: 10px auto;
+}
+
+.cus-card-text {
+    margin: 5px;
+}
