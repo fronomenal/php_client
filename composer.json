@@ -1,0 +1,13 @@
+{
+   "name": "fronom/php_client",
+   "description": "basic php request server",
+   "authors": [
+      {
+         "name": "fronom",
+         "email": "email@email.com"
+      }
+   ],
+    "require": {
+        "twbs/bootstrap": "5.1.3"
+    }
+}
