@@ -8,10 +8,17 @@
 }
 
 .cus-card-img {
-    width: 75px;
-    margin: 10px auto;
+    border-radius: 50%;
 }
 
 .cus-card-text {
     margin: 5px;
+}
+
+.usr-female{
+    border: 3px solid rgba(232, 41, 171, 0.3);
+}
+
+.usr-male{
+    border: 3px solid rgba(13, 110, 118, 0.3);
 }
