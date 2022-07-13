@@ -5,20 +5,16 @@
 .cus-card {
     width: 18rem;
     margin: auto;
+    border-width: 3px ;
+    border-style: solid;
 }
 
 .cus-card-img {
     border-radius: 50%;
+    border-width: 3px ;
+    border-style: solid;
 }
 
 .cus-card-text {
     margin: 5px;
-}
-
-.usr-female{
-    border: 3px solid rgba(232, 41, 171, 0.3);
-}
-
-.usr-male{
-    border: 3px solid rgba(13, 110, 118, 0.3);
 }

@@ -1,35 +1,28 @@
 <?php
-
-    include_once("./includes/request.php");
-
-    $resp = parseRes(fetchAPI());
-
-    $persons = $resp["results"];
-
-?>
-
-<?php
     include_once("./components/head.php");
     include_once("./components/index-header.php");
 ?>
 
-<main>
-    <div class="container-lg main">
-        <div class="row mt-4">
-            <?php foreach($persons as $p): ?>
-                <div class="col-lg-3 col-md-6 col-sm-12 text-center mb-3">
-                    <section class="card cus-card usr p-2 usr-<?=$p["gender"];?>">
-                        <img class="cus-card-img w-100 usr-<?=$p["gender"];?>" src="<?=$p["picture"]["large"];?>">
-                        <div class="card-body">
-                            <p class="lead card-title"><?="{$p['name']['title']}. {$p['name']['first']} {$p['name']['last']}";?></p>
-                            <p class="card-text cus-card-text"><?=$p["email"];?></p>
-                        </div>
-                    </section>
-                </div>
-            <?php endforeach; ?>
-        </div>
-    </div>
-</main>
+<div class="container-sm">
+    <form class="" action="/pages/list.php" method="POST">
+      <div class="mb-3">
+        <label for="usrNum" class="form-label">Number of Users</label>
+        <input type="number" max="180" min="1" name="count" class="form-control" id="usrNum" placeholder="90" required>
+        <div class="form-text">Enter the number of users you want to request.</div>
+      </div>
+      <div class="form-group">
+          <div class="mb-3 col-auto">
+            <label for="color1" class="form-label">Accent Color One</label>
+            <input type="color" id="color1" name="c1" value="#e829ab">
+          </div>
+          <div class="mb-3 col-auto">
+            <label for="color2" class="form-label">Accent Color Two</label>
+            <input type="color" id="color2" name="c2" value="#0d6e76">
+          </div>
+      </div>
+      <button type="submit" class="btn btn-primary" name="sent">Submit</button>
+    </form>
+</div>
 
 <?php
     include_once("./components/footer.php")

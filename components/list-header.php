@@ -9,10 +9,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/index.php">Request</a>
+          <a class="nav-link" href="/index.php">Request</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled" href="/pages/list.php">List</a>
+          <a class="nav-link active disabled" aria-current="page" href="/pages/list.php">List</a>
         </li>
       </ul>
     </div>

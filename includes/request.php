@@ -1,10 +1,9 @@
 <?php
 
-require 'vendor/autoload.php';
 
-function fetchAPI(): string|bool {
+function fetchAPI(int $count): string|bool {
 
-    $url = "https://randomuser.me/api/?results=90";
+    $url = "https://randomuser.me/api/?results=$count";
     
     $req = curl_init($url);
     $reqOPTs = [CURLOPT_RETURNTRANSFER => $url, CURLOPT_SSL_VERIFYHOST => false, CURLOPT_SSL_VERIFYPEER => false];
