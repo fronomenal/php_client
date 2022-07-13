@@ -25,3 +25,5 @@ Use this command to launch a local php server. Requires php to be installed and 
     - php -S localhost:8080
 
 ## Misc
+Why didn't you just do everything in the frontend?
+    The aim of this repo was to build something simple with php templating thus this inappropriateness.
