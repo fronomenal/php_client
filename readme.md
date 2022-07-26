@@ -8,7 +8,7 @@ Queries the **external server** for generated users and populates a client page 
 
 ### Stack
 Project is created with: 
-* PHP
+* PHP 8
 * Bootstrap
 
 ### Packages
@@ -22,7 +22,7 @@ In the root directory perform the following commands
 ### Setup
 Use this command to launch a local php server. Requires php to be installed and shell executable: 
      
-    - php -S localhost:8080
+    php -S localhost:8080
 
 ## Misc
 Why didn't you just do everything in the frontend?
